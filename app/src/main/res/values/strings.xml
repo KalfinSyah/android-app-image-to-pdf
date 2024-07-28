@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Image to PDF</string>
+    <string name="no_image_selected">no image selected</string>
+    <string name="select_image">SELECT IMAGE</string>
+    <string name="convert_to_pdf">CONVERT TO PDF</string>
+    <string name="status"></string>
+</resources>

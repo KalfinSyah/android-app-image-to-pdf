@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#000000"
+tools:context=".MainActivity">
+
+
+<TextView
+    android:id="@+id/txtvNoImgSelected"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="28dp"
+    android:fontFamily="monospace"
+    android:foregroundTint="@color/design_default_color_background"
+    android:text="@string/no_image_selected"
+    android:textColor="#757575"
+    app:layout_constraintBottom_toTopOf="@+id/btnConvertToPdf"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent" />
+
+<Button
+    android:id="@+id/btnSelectImg"
+    android:layout_width="184dp"
+    android:layout_height="62dp"
+    android:layout_marginBottom="24dp"
+    android:backgroundTint="#646464"
+    android:text="@string/select_image"
+    app:layout_constraintBottom_toTopOf="@+id/txtvNoImgSelected"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0" />
+
+<Button
+    android:id="@+id/btnConvertToPdf"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:backgroundTint="#646464"
+    android:enabled="false"
+    android:text="@string/convert_to_pdf"
+    app:layout_constraintBottom_toTopOf="@+id/txtvStatus"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+<TextView
+    android:id="@+id/txtvStatus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="320dp"
+    android:text="@string/status"
+    android:textColor="#757575"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
